@@ -1,0 +1,43 @@
+/* app css stylesheet */
+html, body{
+  height: 100%;
+}
+.container{
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 60px;
+}
+footer{
+  position: relative;
+  height:30px;
+  background: #ccc;
+  margin-top: -30px;
+}
+.menu {
+  list-style: none;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+  background: #000;
+}
+.menu > li {
+  display: inline-block;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+  color:#fff;
+}
+/*sub style*/
+.gallery_box{
+  padding-right:4px;
+}
+.gallery_box img{
+}
+.gallery_box .row {
+  margin-left:0;
+  margin-right:0;
+}
+.gallery_box .row div{
+  padding:4px 0 0 4px;
+}
