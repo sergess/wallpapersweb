@@ -1,41 +1,17 @@
 <h1>App</h1>
 <div class="gallery_box">
     <div class="row">
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
-        </div>
-        <div class="col-xs-6 col-sm-4 col-lg-3">
-            <img src="images/img3.png" class="img-responsive img-thumbnail" alt="" />
+        <div class="col-xs-6 col-sm-4 col-lg-3" ng-repeat="image in images">
+            <span ng-click="setImg(image.imageUrl)"><img ng-src="{{image.imageUrl}}" class="img-responsive img-thumbnail" alt="" /></span>
         </div>
     </div>
+</div>
+
+<div class="angular-lightbox-overlay" id="test" ng-init="mySwitch=false" ng-show="mySwitch">
+    <span class="angular-lightbox-inner">
+                <a href class="previous" title="Previous">&laquo;</a>
+                <img ng-src="{{newImg}}" />
+                <a href class="next" title="Next">&raquo;</a>
+                <a href class="close" title="Close">x</a>
+                </span>
 </div>

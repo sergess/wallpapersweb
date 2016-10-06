@@ -1,6 +1,6 @@
 'use strict';
 
-var wallpapersApp = angular.module('wallpapersApp', ['ngRoute']);
+var wallpapersApp = angular.module('wallpapersApp', ['ngRoute', 'angular-lightbox']);
 
 wallpapersApp.config(['$routeProvider', function ($routeProvide){
     $routeProvide
@@ -37,7 +37,25 @@ wallpapersApp.controller('homeCtrl', ['$scope', '$http', '$location', function (
 
 /*****page controller**********/
 wallpapersApp.controller('pageCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location){
+    $http.get('json/picks.json').success(function(data, status, headers, config) {
 
+        $scope.images = data;
+        var i =0;
+        var imageUrlArray = [];
+        for (i=0; i<$scope.images.length; i++){
+            imageUrlArray.push($scope.images[i].imageUrl);
+        }
+        $scope.imageUrl = imageUrlArray;
+       /* var tt = angular.element(document.querySelector("#test"));
+        console.log(tt);*/
+        /*tt.remove();*/
+        $scope.newImg = $scope.imageUrl[0];
+        $scope.setImg = function (imgt) {
+            $scope.mySwitch = true;
+            $scope.newImg = imgt;
+            console.log($scope.newImg);
+        };
+    });
 }]);
 
 /*****about controller**********/
@@ -49,3 +67,10 @@ wallpapersApp.controller('aboutCtrl', ['$scope', '$http', '$location', function 
 wallpapersApp.controller('contactCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location){
 
 }]);
+
+wallpapersApp.filter('namefilter', function(){
+    return function(check){
+      /* console.log(check);*/
+       return check;
+    }
+});

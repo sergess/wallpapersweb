@@ -1,0 +1,124 @@
+[
+    {
+        "age": 0, 
+        "id": "motorola-xoom-with-wi-fi", 
+        "imageUrl": "http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-1.jpg", 
+        "name": "pic1", 
+        "snippet": "Image Credit: Maria Kazvan",
+        "status": true
+    }, 
+    {
+        "age": 1, 
+        "id": "motorola-xoom", 
+        "imageUrl": "http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-2.jpg", 
+        "name": "pic2", 
+        "snippet": "Image Credit: Maria Kazvan",
+        "status": true
+    }, 
+    {
+        "age": 2, 
+        "carrier": "AT&amp;T", 
+        "id": "motorola-atrix-4g", 
+        "imageUrl": "http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-3.jpg", 
+        "name": "pic3", 
+        "snippet": "Image Credit: Maria Kazvan",
+        "status": true
+    }, 
+    {
+        "age": 3, 
+        "id": "dell-streak-7", 
+        "imageUrl": "http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-1.jpg", 
+        "name": "Dell Streak 7", 
+        "snippet": "Image Credit: Colin Wojno",
+        "status": true
+    }, 
+    {
+        "age": 4, 
+        "carrier": "Cellular South", 
+        "id": "samsung-gem", 
+        "imageUrl": "http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-2.jpg", 
+        "name": "pic4", 
+        "snippet": "Image Credit: Colin Wojno",
+        "status": true
+    }, 
+    {
+        "age": 5, 
+        "carrier": "Dell", 
+        "id": "dell-venue", 
+        "imageUrl": "http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-3.jpg", 
+        "name": "pic5", 
+        "snippet": "The Dell Venue; Your Personal Express Lane to Everything",
+        "status": true
+    }, 
+    {
+        "age": 6, 
+        "carrier": "Best Buy", 
+        "id": "nexus-s", 
+        "imageUrl": "http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-1.jpg", 
+        "name": "pic6", 
+        "snippet": "Fast just got faster with Nexus S. A pure Google experience, Nexus S is the first phone to run Gingerbread (Android 2.3), the fastest version of Android yet.",
+        "status": true
+    }, 
+    {
+        "age": 7, 
+        "carrier": "Cellular South", 
+        "id": "lg-axis", 
+        "imageUrl": "http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-2.jpg", 
+        "name": "pic7", 
+        "snippet": "Android Powered, Google Maps Navigation, 5 Customizable Home Screens",
+        "status": false
+    }, 
+    {
+        "age": 8, 
+        "id": "samsung-galaxy-tab", 
+        "imageUrl": "http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-3.jpg", 
+        "name": "pic8", 
+        "snippet": "Feel Free to Tab\u2122. The Samsung Galaxy Tab\u2122 brings you an ultra-mobile entertainment experience through its 7\u201d display, high-power processor and Adobe\u00ae Flash\u00ae Player compatibility.",
+        "status": true
+    }, 
+    {
+        "age": 9, 
+        "carrier": "Cellular South", 
+        "id": "samsung-showcase-a-galaxy-s-phone", 
+        "imageUrl": "http://tympanus.net/Tutorials/ParallaxSlider/images/1.jpg", 
+        "name": "pic9", 
+        "snippet": "The Samsung Showcase\u2122 delivers a cinema quality experience like you\u2019ve never seen before. Its innovative 4\u201d touch display technology provides rich picture brilliance, even outdoors",
+        "status": true
+    }, 
+    {
+        "age": 10, 
+        "carrier": "Verizon", 
+        "id": "droid-2-global-by-motorola", 
+        "imageUrl": "http://tympanus.net/Tutorials/ParallaxSlider/images/2.jpg", 
+        "name": "pic10", 
+        "snippet": "The first smartphone with a 1.2 GHz processor and global capabilities.",
+        "status": true
+    }, 
+    {
+        "age": 11, 
+        "carrier": "Verizon", 
+        "id": "droid-pro-by-motorola", 
+        "imageUrl": "http://tympanus.net/Tutorials/ParallaxSlider/images/3.jpg", 
+        "name": "pic11", 
+        "snippet": "The next generation of DOES.",
+        "status": true
+    }, 
+    {
+        "age": 12, 
+        "carrier": "AT&amp;T", 
+        "id": "motorola-bravo-with-motoblur", 
+        "imageUrl": "http://tympanus.net/Tutorials/ParallaxSlider/images/4.jpg", 
+        "name": "pic12", 
+        "snippet": "An experience to cheer about.",
+        "status": true
+    }, 
+    {
+        "age": 13, 
+        "carrier": "T-Mobile", 
+        "id": "motorola-defy-with-motoblur", 
+        "imageUrl": "http://tympanus.net/Tutorials/ParallaxSlider/images/5.jpg", 
+        "name": "pic13", 
+        "snippet": "Are you ready for everything life throws your way?",
+        "status": false
+    }
+]
