@@ -58,6 +58,13 @@ wallpapersApp.controller('pageCtrl', ['$scope', '$http', '$location', function (
             $scope.mySwitch = true;
             $scope.newImg = imgt;
         };
+
+       /* $(document).on('click', 'a.close', function(e) {
+            alert('work');
+            $scope.mySwitch = false;
+            return false;
+        });*/
+
         $(document).keydown(function(e) {
             switch (e.which) {
                 case 37: // Left arrow
@@ -69,8 +76,8 @@ wallpapersApp.controller('pageCtrl', ['$scope', '$http', '$location', function (
                     $scope.nextSlide();
                     break;
                 case 27: // Escape
-                    console.log('exit');
-                    $scope.closeSlide();
+
+                    $scope.mySwitch = false;
                     break;
             }
         });
@@ -85,7 +92,9 @@ wallpapersApp.controller('pageCtrl', ['$scope', '$http', '$location', function (
             console.log(index);
         };
         $scope.closeSlide = function(){
+            console.log('exit');
             $scope.mySwitch = false;
+            console.log($scope.mySwitch);
         };
     });
 }]);
@@ -97,7 +106,6 @@ wallpapersApp.controller('aboutCtrl', ['$scope', '$http', '$location', function 
 
 /*****contact controller**********/
 wallpapersApp.controller('contactCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location){
-
 }]);
 
 wallpapersApp.filter('namefilter', function(){

@@ -1,16 +1,18 @@
 <h1>Contact</h1>
-<form role="form">
+<form role="form" name="myForm" novalidate>
     <div class="form-group">
         <label for="Name">Name</label>
-        <input type="name" class="form-control" id="name" placeholder="Name">
+        <input type="name" class="form-control" id="name" placeholder="Name" name="user" ng-model="user" required>
+        <p class="help-block" ng-show="myForm.email.$dirty && myForm.user.$invalid"><span ng-show="myForm.user.$error.required">Invalid Name.</span></p>
     </div>
     <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Email">
+        <input type="email" class="form-control" id="email" placeholder="Email" name="email" ng-model="email" required>
+        <p class="help-block" ng-show="myForm.email.$dirty && myForm.email.$invalid"><span ng-show="myForm.email.$error.required || myForm.email.$error.email">Invalid email.</span></p>
     </div>
     <div class="form-group">
         <label for="text">Text</label>
         <textarea class="form-control" id="text" ></textarea>
     </div>
-    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="submit" class="btn btn-success" ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid">Submit</button>
 </form>
