@@ -1,17 +1,10 @@
 <h1>App</h1>
-<div class="gallery_box">
+<div class="gallery_box" gallery="">
     <div class="row">
-        <div class="col-xs-6 col-sm-4 col-lg-3" ng-repeat="image in images">
+        <div class="col-xs-6 col-sm-4 col-lg-3" ng-repeat="image in images | startFrom:currentPage*pageSize | limitTo:pageSize">
             <span ng-click="setImg(image.imageUrl)"><img ng-src="{{image.imageUrl}}" class="img-responsive img-thumbnail" alt="" /></span>
         </div>
     </div>
 </div>
-
-<div class="angular-lightbox-overlay" ng-init="mySwitch=false" ng-show="mySwitch">
-    <span class="angular-lightbox-inner">
-                <a href class="previous" title="Previous" ng-click="prevSlide()">&laquo;</a>
-                <img ng-src="{{newImg}}" />
-                <a href class="next" title="Next" ng-click="nextSlide()">&raquo;</a>
-                <a href class="close" title="Close" ng-click="closeSlide()">x</a>
-                </span>
-</div>
+<hr/>
+<div paginations=""></div>

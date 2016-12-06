@@ -33,6 +33,8 @@ footer{
   padding-right:4px;
 }
 .gallery_box img{
+  max-height:100px;
+  width:100%;
 }
 .gallery_box .row {
   margin-left:0;

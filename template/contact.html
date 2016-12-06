@@ -14,5 +14,5 @@
         <label for="text">Text</label>
         <textarea class="form-control" id="text" ></textarea>
     </div>
-    <button type="submit" class="btn btn-success" ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid">Submit</button>
+    <button type="submit" class="btn btn-success" ng-disabled="myForm.$invalid">Submit</button>
 </form>
